@@ -1,0 +1,10 @@
+#+TITLE: Makan
+
+* How to Build
+
+#+BEGIN_SRC
+make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- distclean
+make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- zynq_zturn_defconfig
+make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi- uImage
+make ARCH=arm CROSS_COMPILE=arm-xilinx-linux-gnueabi dtbs
+#+END_SRC
